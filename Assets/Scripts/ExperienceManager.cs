@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ExperienceManager : MonoBehaviour
 {
+    [SerializeField] private GameObject SelectionMenu;
+    [SerializeField] private GameObject LookUpMenu;
+    [SerializeField] private GameObject SearchUpMenu;
+
     #region Singleton
 
     private static ExperienceManager _instance;
@@ -22,4 +26,19 @@ public class ExperienceManager : MonoBehaviour
     }
 
     #endregion
+
+    public void SelectionHandler()
+    {
+        SelectionMenu.SetActive(true);
+    }
+
+    public void OneTapHandler()
+    {
+        LookUpMenu.SetActive(true);
+    }
+
+    public void TwoTapHandler()
+    {
+        SearchUpMenu.SetActive(true);
+    }
 }

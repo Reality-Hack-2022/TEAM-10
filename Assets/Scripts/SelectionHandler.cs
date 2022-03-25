@@ -18,6 +18,7 @@ public class SelectionHandler : MonoBehaviour
 
     public void MakePrefabAppear( SavedTextData data )
     {
-        Instantiate(data.Prefab);
+        Instantiate(data.ThreeDRepresentation);
+
     }
 }

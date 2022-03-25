@@ -6,14 +6,17 @@ using UnityEngine;
 public class SavedTextData : ScriptableObject
 {
     [Header("Display Properties")]
+    [SerializeField] private float timestamp;
+    public float Timestamp => timestamp;   
+    
     [SerializeField] private string savedText;
     public string SavedText => savedText;
 
-    [SerializeField] private float timestamp;
-    public float Timestamp => timestamp;
+    [SerializeField] private GameObject book;
+    public GameObject Book => book;
 
-    [SerializeField] private GameObject prefab;
-    public GameObject Prefab => prefab;
+    [SerializeField] private GameObject threeDRepresentation;
+    public GameObject ThreeDRepresentation => threeDRepresentation;
 
 
 

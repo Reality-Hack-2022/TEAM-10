@@ -6,9 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/Mixed Reality Toolkit Examples/2.7.3/Experimental - TouchSlider/Scenes/TouchSliderExample.unity
-    guid: ee879802a13cc6b459c129d37ca152b2
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0a1cbb8de204e7e4c802e641b738efa0
+  - enabled: 1
+    path: Assets/Scenes/ReadingExp.unity
+    guid: 40a9738b17d7016429a70e78322febdc
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5f1cdf174ca16104f8ec56ce134f828f, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 5c6203e254ac9d74caf14ee693661dc5, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b39eb30fde07fce4ba89682fdb5afaeb, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: d8976c76e60477d4b8ee31ac7f0d60a3, type: 2}
