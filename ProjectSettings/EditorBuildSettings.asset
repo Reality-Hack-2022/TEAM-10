@@ -9,5 +9,6 @@ EditorBuildSettings:
     path: Assets/Samples/Mixed Reality Toolkit Examples/2.7.3/Experimental - TouchSlider/Scenes/TouchSliderExample.unity
     guid: ee879802a13cc6b459c129d37ca152b2
   m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 5c6203e254ac9d74caf14ee693661dc5, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b39eb30fde07fce4ba89682fdb5afaeb, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: d8976c76e60477d4b8ee31ac7f0d60a3, type: 2}
