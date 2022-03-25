@@ -18,6 +18,10 @@ public class SavedTextData : ScriptableObject
     [SerializeField] private GameObject threeDRepresentation;
     public GameObject ThreeDRepresentation => threeDRepresentation;
 
+    [SerializeField] private ItemKind kind;
+    public ItemKind Kind => kind;
 
+    [SerializeField] private Vector3 placement = new Vector3(0, 0, 0);
+    public Vector3 Placement => placement;
 
 }
