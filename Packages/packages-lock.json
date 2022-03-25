@@ -135,42 +135,6 @@
         "com.microsoft.mixedreality.toolkit.foundation": "2.7.3"
       }
     },
-    "com.microsoft.mixedreality.wlt.asa": {
-      "version": "file:MixedReality/com.microsoft.mixedreality.wlt.asa-1.5.8.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.microsoft.azure.spatial-anchors-sdk.core": "2.11.0",
-        "com.microsoft.mixedreality.worldlockingtools": "1.5.8"
-      }
-    },
-    "com.microsoft.mixedreality.wlt.asa.samples": {
-      "version": "file:MixedReality/com.microsoft.mixedreality.wlt.asa.samples-1.5.8.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.microsoft.azure.spatial-anchors-sdk.core": "2.11.0",
-        "com.microsoft.mixedreality.toolkit.foundation": "2.7.0",
-        "com.microsoft.mixedreality.wlt.asa": "1.5.8",
-        "com.microsoft.mixedreality.worldlockingtools": "1.5.8",
-        "com.microsoft.mixedreality.worldlockingsamples": "1.5.8"
-      }
-    },
-    "com.microsoft.mixedreality.worldlockingsamples": {
-      "version": "file:MixedReality/com.microsoft.mixedreality.worldlockingsamples-1.5.8.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.microsoft.mixedreality.toolkit.foundation": "2.7.0",
-        "com.microsoft.mixedreality.worldlockingtools": "1.5.8"
-      }
-    },
-    "com.microsoft.mixedreality.worldlockingtools": {
-      "version": "file:MixedReality/com.microsoft.mixedreality.worldlockingtools-1.5.8.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
     "com.microsoft.spatialaudio.spatializer.unity": {
       "version": "file:MixedReality/com.microsoft.spatialaudio.spatializer.unity-1.0.246.tgz",
       "depth": 0,
