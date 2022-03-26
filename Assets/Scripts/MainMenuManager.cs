@@ -7,13 +7,18 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Z)) ReadingExperienceLaunch();
-    }
+
     public void ReadingExperienceLaunch()
     {
         SceneManager.LoadScene(1);
+    }
+    public void ZoneOutLaunch()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void MindPalaceLaunch()
+    {
+        SceneManager.LoadScene(2);
     }
 
 

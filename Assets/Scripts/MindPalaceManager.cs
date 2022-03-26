@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class MindPalaceManager : MonoBehaviour
@@ -44,5 +45,14 @@ public class MindPalaceManager : MonoBehaviour
     private void CreatePrefab(SavedTextData item)
     {
         Instantiate(item.ThreeDRepresentation, item.Placement, Quaternion.identity, container);
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void QuitApplication()
+    {
+        Application.Quit();
     }
 }
