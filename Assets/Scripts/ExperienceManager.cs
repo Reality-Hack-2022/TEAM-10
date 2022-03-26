@@ -23,6 +23,7 @@ public class ExperienceManager : MonoBehaviour
     public GameObject WhalePrefab;
     public Camera playerPos;
     private Vector3 _playerOffset = new Vector3(0f, 0.000f, 2f);
+    private Vector3 _wordOffset = new Vector3(0.02f, 0.02f, 0.02f);
 
     #region Singleton
 
@@ -50,7 +51,7 @@ public class ExperienceManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.B)) SelectionHandler("whale", testLocation);
+        if(Input.GetKeyDown(KeyCode.B)) SelectionHandler("whale", playerPos.transform.position + _wordOffset);
 
         fishesContainer.transform.Rotate(_rotAng * Time.deltaTime);
     }
