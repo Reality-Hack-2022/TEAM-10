@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c7e2ea8fe30b444eb793ac64baf2767, type: 3}
-  m_Name: Saved Text Data
+  m_Name: Quote0
   m_EditorClassIdentifier: 
-  savedText: Apple
-  timestamp: 0
-  prefab: {fileID: 4164436879271712194, guid: 5b5df76be380d41a888ffada7828d989, type: 3}
+  timestamp: 10.23.2020
+  savedText: The worst enemy to creativity is self-doubt
+  book: {fileID: 0}
+  threeDRepresentation: {fileID: 0}
+  kind: 1
+  placement: {x: 0.01, y: -0.01, z: -0.01}

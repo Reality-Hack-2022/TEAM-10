@@ -6,8 +6,8 @@ using UnityEngine;
 public class SavedTextData : ScriptableObject
 {
     [Header("Display Properties")]
-    [SerializeField] private float timestamp;
-    public float Timestamp => timestamp;   
+    [SerializeField] private string timestamp;
+    public string Timestamp => timestamp;   
     
     [SerializeField] private string savedText;
     public string SavedText => savedText;

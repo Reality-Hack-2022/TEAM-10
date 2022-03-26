@@ -13,8 +13,8 @@ public class ExperienceManager : MonoBehaviour
     [SerializeField] private Transform wordContainer;
     [SerializeField] private GameObject wordPrefab;
 
-    private Vector3 testLocation = new Vector3(0.1f, 0.1f, 0.1f);
-        private Vector3 _offset = new Vector3(0.02f, 0.02f, 0.02f);
+    private Vector3 testLocation = new Vector3(0.2f, 0.2f, 0.2f);
+    private Vector3 _offset = new Vector3(0.002f, 0.002f, 0.002f);
 
     #region Singleton
 
