@@ -10,6 +10,8 @@ public class MindPalaceManager : MonoBehaviour
     [SerializeField] private GameObject textPrefab; 
     [SerializeField] private Transform container;
 
+    private Vector3 _userLocation = new Vector3(0f, 0f, 0f);
+
     private void Start()
     {
 
@@ -40,7 +42,8 @@ public class MindPalaceManager : MonoBehaviour
     private void CreateQuote(SavedTextData item)
     {
       var element = Instantiate(textPrefab, item.Placement, Quaternion.identity, container);
-        element.GetComponent<TMP_Text>().text = item.SavedText;
+        element.GetComponentInChildren<TMP_Text>().text = item.SavedText;
+        element.transform.LookAt(_userLocation);
     }
     private void CreatePrefab(SavedTextData item)
     {

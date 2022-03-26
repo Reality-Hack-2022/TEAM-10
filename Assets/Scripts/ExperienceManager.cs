@@ -59,12 +59,16 @@ public class ExperienceManager : MonoBehaviour
     {
         LookUpMenu.SetActive(true);
          LookUpMenu.transform.position = SelectionMenu.transform.position + _offset;
+
+        SelectionMenu.SetActive(false);
     }
 
     public void TwoTapHandler()
     {
         SearchUpMenu.SetActive(true);
         SearchUpMenu.transform.position = SelectionMenu.transform.position + _offset * 2;
+
+        SelectionMenu.SetActive(false);
     }
     public void BackToMainMenu()
     {

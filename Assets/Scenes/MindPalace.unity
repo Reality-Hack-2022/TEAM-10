@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   savedItemsContainer: {fileID: 11400000, guid: c8f113667e329264196da0ab1a33b491, type: 2}
-  textPrefab: {fileID: 3010000798581321121, guid: 11fbee893bca36348b154449cb680ffb, type: 3}
+  textPrefab: {fileID: 5022269032625353890, guid: 75038832502d0c644858b8b4186dec2c, type: 3}
   container: {fileID: 860748258}
 --- !u!4 &1795569694
 Transform:
@@ -746,7 +746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2245645513117454459, guid: be1e2ca700274934494b21dc22aaebea, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2245645513117454459, guid: be1e2ca700274934494b21dc22aaebea, type: 3}
       propertyPath: m_LocalPosition.x
