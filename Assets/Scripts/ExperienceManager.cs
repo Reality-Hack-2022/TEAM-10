@@ -14,7 +14,7 @@ public class ExperienceManager : MonoBehaviour
     [SerializeField] private GameObject wordPrefab;
 
     private Vector3 testLocation = new Vector3(0.2f, 0.2f, 0.2f);
-    private Vector3 _offset = new Vector3(0.002f, 0.002f, 0.002f);
+    private Vector3 _offset = new Vector3(0.0002f, 0.0002f, 0.0002f);
 
     #region Singleton
 
@@ -51,7 +51,7 @@ public class ExperienceManager : MonoBehaviour
         label.GetComponent<ButtonConfigHelper>().MainLabelText = word;
 
         SelectionMenu.SetActive(true);
-        SelectionMenu.transform.position = worldSpaceCoord;
+        SelectionMenu.transform.position = label.transform.position + _offset;
 
     }
 
@@ -64,7 +64,7 @@ public class ExperienceManager : MonoBehaviour
     public void TwoTapHandler()
     {
         SearchUpMenu.SetActive(true);
-        SearchUpMenu.transform.position = LookUpMenu.transform.position + _offset;
+        SearchUpMenu.transform.position = SelectionMenu.transform.position + _offset * 2;
     }
     public void BackToMainMenu()
     {
