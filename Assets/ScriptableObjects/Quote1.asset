@@ -17,4 +17,4 @@ MonoBehaviour:
   book: {fileID: 0}
   threeDRepresentation: {fileID: 0}
   kind: 1
-  placement: {x: 0.59, y: 0.23, z: -0.31}
+  placement: {x: 0.4, y: 0.23, z: 0.4}
