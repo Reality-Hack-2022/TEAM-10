@@ -10,7 +10,11 @@ public class SelectedWordInteractionsManager : MonoBehaviour
 
     public void ClickHandler()
     {
-        if(_tapped) ExperienceManager.Instance.OneTapHandler();
+        if (!_tapped)
+        {
+            ExperienceManager.Instance.OneTapHandler();
+            _tapped = true;
+        }
         else ExperienceManager.Instance.TwoTapHandler();
     }
 }

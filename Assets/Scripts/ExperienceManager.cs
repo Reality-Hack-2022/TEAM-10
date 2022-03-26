@@ -13,8 +13,16 @@ public class ExperienceManager : MonoBehaviour
     [SerializeField] private Transform wordContainer;
     [SerializeField] private GameObject wordPrefab;
 
+    [SerializeField] private GameObject fishesContainer;
+    private Vector3 _rotAng = new Vector3(0, 5, 0);
+
     private Vector3 testLocation = new Vector3(0.2f, 0.2f, 0.2f);
-    private Vector3 _offset = new Vector3(0.0002f, 0.0002f, 0.0002f);
+    private Vector3 _offset = new Vector3(0.02f, 0.02f, 0.02f);
+
+    public Transform ARContainer;
+    public GameObject WhalePrefab;
+    public Camera playerPos;
+    private Vector3 _playerOffset = new Vector3(0f, 0.000f, 2f);
 
     #region Singleton
 
@@ -43,6 +51,8 @@ public class ExperienceManager : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.B)) SelectionHandler("whale", testLocation);
+
+        fishesContainer.transform.Rotate(_rotAng * Time.deltaTime);
     }
 
     public void SelectionHandler(string word, Vector3 worldSpaceCoord)
@@ -77,5 +87,12 @@ public class ExperienceManager : MonoBehaviour
     public void QuitApplication()
     {
         Application.Quit();
+    }
+
+    public void CreateWhale()
+    {
+        var model = Instantiate(WhalePrefab, ARContainer);
+        model.transform.position = playerPos.transform.position + _playerOffset;
+
     }
 }
